@@ -29,12 +29,26 @@ const { frontmatter } = Astro.props;
 		color: white;
 		text-decoration: underline;
 	}
-	html {
+	body {
+		align-items: center;
+		padding: 0;
+		margin: 0;
+		min-height: 100%;
+		width: 100%;
+	}
+	html, root {
 		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
+		background: #3a3a3a;
+		/* white to black linear noise gradient spanning from top to bottom */
+		background:
+			linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+			url('/noise.svg');
 		color: white;
 		text-align: center;
+		min-height: 100%;
+		width: 100%;
+		padding: 0;
+		margin: 0;
 	}
 	code {
 		font-family:
