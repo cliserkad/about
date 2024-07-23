@@ -10,11 +10,15 @@ const { frontmatter } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
 		<title>{frontmatter.title}</title>
+		<meta name="description" content={frontmatter.title} />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<meta property="og:title" content={frontmatter.title} />
+		<meta property="og:image" content="/favicon.svg" />
+		<meta property="og:description" content={frontmatter.title} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="apple-touch-icon" href="/favicon.svg">
 	</head>
 	<body>
 		<slot />
