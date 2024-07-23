@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="128px" width="128px">
+  <defs>
+    <linearGradient id="0" x1="0.5" y1="1" x2="0.5" y2="0">
+      <stop offset="0%" stop-color="#8a2d63"/>
+      <stop offset="37%" stop-color="#a5407b"/>
+      <stop offset="100%" stop-color="#410c22"/>
+    </linearGradient>
+    <radialGradient id="1" gradientTransform="translate(-1 -1) scale(2, 2)">
+      <stop offset="12%" stop-color="#c85c46"/>
+      <stop offset="34%" stop-color="rgba(206, 73, 66, 0.75)"/>
+      <stop offset="56%" stop-color="rgba(201, 63, 77, 0.5)"/>
+      <stop offset="100%" stop-color="rgba(177, 56, 94, 0)"/>
+    </radialGradient>
+    <clipPath id="circle-clip">
+      <circle cx="64" cy="64" r="64"/>
+    </clipPath>
+  </defs>
+  <rect fill="url(#0)" height="100%" width="100%" clip-path="url(#circle-clip)"/>
+  <rect fill="url(#1)" height="100%" width="100%" clip-path="url(#circle-clip)"/>
+</svg>
