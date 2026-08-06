@@ -1,0 +1,11 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    # Bundles ALL npm packages into one pull request / commit
+    groups:
+      all-dependencies:
+        patterns:
+          - "*"
